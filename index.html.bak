@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- ... existing head elements ... -->
+</head>
+<body>
+    <form action="/create" method="post">
+        <label for="appName">App Name:</label><br>
+        <input type="text" id="appName" name="appName"><br>
+
+        <label for="appleStoreLink">Apple Store Link:</label><br>
+        <input type="text" id="appleStoreLink" name="appleStoreLink"><br>
+
+        <label for="googlePlayLink">Google Play Link:</label><br>
+        <input type="text" id="googlePlayLink" name="googlePlayLink"><br><br>
+
+        <input type="submit" value="Create Redirection Page">
+    </form>
+</body>
+</html>

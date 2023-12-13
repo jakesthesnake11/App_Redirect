@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create App Redirection</title>
+</head>
+<body>
+    <form action="/create" method="post">
+        <label for="appName">App Name:</label><br>
+        <input type="text" id="appName" name="appName" required><br>
+
+        <label for="appleStoreLink">Apple Store Link:</label><br>
+        <input type="url" id="appleStoreLink" name="appleStoreLink" required><br>
+
+        <label for="googlePlayLink">Google Play Link:</label><br>
+        <input type="url" id="googlePlayLink" name="googlePlayLink" required><br><br>
+
+        <input type="submit" value="Create Redirection Page">
+    </form>
+
+    <h2>Existing Redirects:</h2>
+    <ul id="redirectList">
+        <!-- Redirects will be listed here -->
+    </ul>
+
+    <script>
+        // JavaScript code to populate the list of redirects
+        window.onload = function() {
+            document.getElementById('redirectList').innerHTML = '{{ html }}';
+        };
+    </script>
+</body>
+</html>
